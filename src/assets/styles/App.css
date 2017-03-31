@@ -33,4 +33,29 @@ h1 {
 aside {
   background:#333;
   width:300px;
+  height: 100%;
+  position:fixed;
+}
+
+.mainAlbums {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+main {
+  margin-left: 300px;
+  
+}
+
+.thumbBlock {
+  width: 250px;
+  text-align: center;
+  background-color: aqua;
+  margin-top: 10px;
+}
+
+.thumbnail {
+  padding:10px;
+  width: 200px;
 }

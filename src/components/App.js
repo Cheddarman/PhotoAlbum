@@ -4,7 +4,7 @@ import Album from './Album'
 import Photos from './Photo'
 import Albums from '../assets/Pictures.json'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import '.assets/styles/App.css'
+import '../assets/styles/App.css'
 
 console.log(Albums)
 

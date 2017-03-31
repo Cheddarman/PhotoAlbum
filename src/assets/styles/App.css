@@ -1,0 +1,36 @@
+/*MyAlbums Page*/
+
+h1 {
+  line-height: 100px;
+  text-align: center;
+  background:#333;
+  color:white;
+}
+
+.mainBit {
+  width:1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin:auto;
+}
+
+.galleryBlock {
+  margin:20px;
+  width:275px;
+  height: 300px;
+  background:aqua;
+  border:solid 1px gray;
+  text-align: center;
+}
+
+.galleryBlock img {
+ width: 250px;
+}
+
+/*Albums page*/
+
+aside {
+  background:#333;
+  width:300px;
+}

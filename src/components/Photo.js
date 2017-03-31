@@ -1,14 +1,12 @@
 import React from 'react'
+import Albums from '../assets/Pictures.json'
 
 export default React.createClass({
   render() {
     return(
     	<div>
-    		<h1>My Albums</h1>
-    		<div>
-    			
-    		</div>
+      <img src="" alt="" />
     	</div>
     )
   }
-)}
+})

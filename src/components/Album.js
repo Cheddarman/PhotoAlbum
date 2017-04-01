@@ -1,16 +1,19 @@
 import React from 'react'
 import Albums from '../assets/Pictures.json'
 import { Link } from 'react-router-dom'
-
+ 
 export default React.createClass({
-  getInitialState() {
+  handleClick() {
     return {
 
     }
   },
-  handleClick() {
+   getInitialState() {
     return {
+      photos: Albums.filter(gallery=>{
+        return Number(gallery.id) === Number(this.props.match.params.albumId)
 
+      })[0]
     }
   },
 
@@ -22,14 +25,14 @@ export default React.createClass({
     				<ul>
             {Albums.photos.map(image=>(
     					<Link to="">
-    					<li onClick={this.handleClick}>{Albums.gallery.name}</li>
+    					<li onClick={this.handleClick}>{this.state.photos.gallery.name}</li>
     					</Link>
               ))}
     				</ul>
     			</nav>
     		</aside>
     		<main className='mainAlbums'>
-        {Albums.photos.map(image=>(
+        {this.props.match.params.albumId.photos.map(image=>(
           <Link key={image.id} to={'/Photo/' + image.id}>
           <div className='thumbBlock'>
             <img className='thumbnail' src={image.url} alt={image.name} />

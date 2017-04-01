@@ -14,7 +14,7 @@ export default React.createClass({
       <Router>
         <div>
          <Route exact={true} path="/" component={MyAlbums}/>
-         <Route path="/Album" component={Album}/>
+         <Route path="/Album/:albumID" component={Album}/>
          <Route path="/Photo/" component={Photos}/>
         </div>
       </Router>

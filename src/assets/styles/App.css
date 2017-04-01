@@ -41,18 +41,21 @@ aside {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
 }
 
 main {
   margin-left: 300px;
-  
+  align-items: stretch;
 }
 
 .thumbBlock {
   width: 250px;
+  
   text-align: center;
   background-color: aqua;
   margin-top: 10px;
+
 }
 
 .thumbnail {

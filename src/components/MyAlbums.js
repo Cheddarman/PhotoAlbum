@@ -10,7 +10,7 @@ export default React.createClass({
     		<h1>My Albums</h1>
     		<div className='mainBit'>
     			{Albums.gallery.map(gallery=>(
-    			<Link key={this.id} to={'/Album/' + gallery.id}>
+    			<Link key={gallery.id} to={'/Album/' + gallery.id}>
     			<div className='galleryBlock'>
     				<img src={gallery.coverphoto} alt={gallery.id} />
     				<p>{gallery.name}</p>

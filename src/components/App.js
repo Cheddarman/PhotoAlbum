@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom'
 import '../assets/styles/App.css'
 
 console.log(Albums)
-
+// console.log(image)
 export default React.createClass({
   render() {
     return(
@@ -15,7 +15,7 @@ export default React.createClass({
         <div>
          <Route exact={true} path="/" component={MyAlbums}/>
          <Route path="/Album/:albumID" component={Album}/>
-         <Route path="/Photo/" component={Photos}/>
+         <Route path="/Photo/:photoID" component={Photos}/>
         </div>
       </Router>
     )

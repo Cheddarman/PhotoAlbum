@@ -12,13 +12,13 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: stretch;
   margin:auto;
 }
 
 .galleryBlock {
   margin:20px;
   width:275px;
-  height: 300px;
   background:aqua;
   border:solid 1px gray;
   text-align: center;
@@ -26,6 +26,7 @@ h1 {
 
 .galleryBlock img {
  width: 250px;
+ padding-top:10px;
 }
 
 /*Albums page*/

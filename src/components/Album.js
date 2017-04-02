@@ -10,8 +10,9 @@ export default React.createClass({
   },
    getInitialState() {
     return {
-      photos: Albums.filter(gallery=>{
+      photos: Albums.gallery.filter(gallery=>{
         return Number(gallery.id) === Number(this.props.match.params.albumId)
+              
 
       })[0]
     }
@@ -23,9 +24,9 @@ export default React.createClass({
     		<aside>
     			<nav>
     				<ul>
-            {Albums.photos.map(image=>(
+            {Albums.photos.map(pic=>(
     					<Link to="">
-    					<li onClick={this.handleClick}>{this.state.photos.gallery.name}</li>
+    					<li onClick={pic.handleClick}>{pic.state.gallery.photos.name}</li>
     					</Link>
               ))}
     				</ul>
@@ -36,7 +37,6 @@ export default React.createClass({
           <Link key={image.id} to={'/Photo/' + image.id}>
           <div className='thumbBlock'>
             <img className='thumbnail' src={image.url} alt={image.name} />
-            
           </div>
           </Link>
           ))}
